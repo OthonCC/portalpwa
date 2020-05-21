@@ -1,0 +1,68 @@
+<style>
+        .panelAS {}
+
+        .panelAS>table>tr {
+            height: 100%;
+        }
+
+        .panelAS>table>tbody>tr>td {
+            border: 1px;
+        }
+
+
+        @media (max-width: 992px) {
+            .panelAS {
+                height: auto;
+                margin-bottom: 10px;
+                overflow-y: hidden;
+                overflow-x: auto;
+                float: left;
+                width: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .panelAS>table {
+                border-collapse: separate;
+            }
+
+            .panelAS>table>tbody>tr {
+                height: 100%;
+            }
+
+            .panelAS>table>tbody>tr>td {
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+            }
+
+            .panelZona {
+                height: auto;
+                margin-bottom: 10px;
+                overflow-y: hidden;
+                overflow-x: auto;
+                float: left;
+                width: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .panelZona>table {
+                border-collapse: separate;
+            }
+
+            .panelZona>table>tbody>tr {
+                height: 100%;
+            }
+
+            .panelZona>table>tbody>tr>td {
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                width: 100px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+    </style>

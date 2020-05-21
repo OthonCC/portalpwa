@@ -1,16 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head></head>
-<body>
-    <div id="header"></div>
-    <div id="menu"></div>
 
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/arbol_navegacion.css?v=1.0.0.7">
+    
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+    <div id="menu"></div>
+    <br>
     <div class="container">
-        Contenido
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Autoservicio, formato y/o tienda" aria-label="Username"
+                aria-describedby="basic-addon1" id="search" onkeyup="return busqueda()">&nbsp;&nbsp;
+                <a href="MapaAutoservicios.html"> 
+                <!--<i class="fa fa-street-view" style="font-size: xx-large; color: darkslateblue;"></i>-->
+                <i class="fa fa-map-marker" style="font-size: xx-large; color: darkslateblue;"></i>
+                <!--<i class="fa fa-location-arrow" style="font-size: xx-large; color: darkslateblue;"></i>-->
+            </a>
+        </div>
+        <h4><span class="badge badge-secondary">Autoservicios</span></h4>
+
+        <div class="panel panelAS">
+            <table id="tblAutoservicio" runat="server" class="tabla">
+                <tr>
+                    <td style="background-color: lightblue;">
+                        <img src="../img/Autoservicios/Chedraui.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Walmart.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Soriana.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/CityFresko.png" class="img">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../img/Autoservicios/Liverpool.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Casaley.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Bestbuy.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Bodesa.png" class="img">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <h4><span class="badge badge-secondary">Formatos</span></h4>
+        <div class="panel panelAS">
+            <table id="tblFormato" runat="server" class="tabla">
+                <tr>
+                    <td style="background-color: lightblue;">
+                        <img src="../img/Autoservicios/Chedraui.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Walmart.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Soriana.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/CityFresko.png" class="img">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../img/Autoservicios/Liverpool.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Casaley.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Bestbuy.png" class="img">
+                    </td>
+                    <td>
+                        <img src="../img/Autoservicios/Bodesa.png" class="img">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h4><span class="badge badge-secondary">Zonas</span></h4>
+        <div class="panel panelZona">
+            <table id="tblZona" runat="server" class="tabla">
+                <tr>
+                    <td style="background-color: lightblue;">
+                        Zona Todas
+                    </td>
+                    <td>
+                        Zona 1
+                    </td>
+                    <td>
+                        Zona 2
+                    </td>
+                    <td>
+                        Zona 3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zona 4
+                    </td>
+                    <td>
+                        Zona 5
+                    </td>
+                    <td>
+                        Zona 6
+                    </td>
+                    <td>
+                        Zona 7
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h4><span class="badge badge-secondary">Tiendas</span></h4>
+        <div class="panel panelZona">
+            <table id="tblTienda" runat="server" class="tabla">
+                <tr>
+                    <td style="background-color: lightblue;">
+                        Tienda 1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tienda 2
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div id="footer"></div>
+    <footer style="position: relative;" id="footer"></footer>
+      
     <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="../js/template.js"></script>
-    <script> muestraTemplate(false, false, false);    </script>
+    <script src="../js/template.js?v=1.0.0.12"></script>
+    <script src="../vendor/pouchdb/pouchdb-7.1.1.min.js"></script>
+    <script src="../js/BD/tbTiendas.js?V=1.0.0.12"></script>
+    <script src="../js/arbol_navegacion.js?v=1.0.0.70"></script>
+
+    <script> muestraTemplate(false, true, false);    </script>
 </body>
+
 </html>
