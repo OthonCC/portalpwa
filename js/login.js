@@ -37,7 +37,7 @@ $("#InicioSesion").click(() => {
 
 
     if (usuario=="USUARIO1" && password=="CONTRASENA1") { 
-        window.location="http://localhost:8085/pruebanav.html"; 
+        window.location="pruebanav.html"; 
 
     //fetch('http://localhost:8085/pruebanav.html', {
     //    method: 'GET',
@@ -48,16 +48,24 @@ $("#InicioSesion").click(() => {
     }
     //).then(res => console.log);
     else if (usuario=="USUARIO" && password=="CONTRASENA") { 
-        window.location="http://localhost:8085/pruebanav.html"; }
+        window.location="pruebanav.html"; }
     else if (usuario=="USUARIO2" && password=="CONTRASENA2") { 
-        window.location="http://localhost:8085/pruebanav.html"; }
+        window.location="pruebanav.html"; }
     else if (usuario=="USUARIO3" && password=="CONTRASENA3") { 
-        window.location="http://localhost:8085/pruebanav.html"; }
+        window.location="pruebanav.html"; }
     else{
-        window.location="http://localhost:8085/usuarioocontraseña.html";
+        window.location="usuarioocontraseña.html";
     }
 
     //return window.location.href = "/pages/ArbolNavegacion.html";
+});
+
+
+$("#Inicio").click(() => {
+    //fetch('')
+    
+
+    return window.location.href = "index.html";
 });
 
 function validaCampoVacio(input) {
