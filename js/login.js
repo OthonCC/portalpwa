@@ -37,7 +37,7 @@ $("#InicioSesion").click(() => {
 
 
     if (usuario=="USUARIO1" && password=="CONTRASENA1") { 
-        window.location="pruebanav.html"; 
+        window.location="/pages/ArbolNavegacion.html"; 
 
     //fetch('http://localhost:8085/pruebanav.html', {
     //    method: 'GET',
@@ -48,11 +48,11 @@ $("#InicioSesion").click(() => {
     }
     //).then(res => console.log);
     else if (usuario=="USUARIO" && password=="CONTRASENA") { 
-        window.location="pruebanav.html"; }
+        window.location="/pages/ArbolNavegacion.html"; }
     else if (usuario=="USUARIO2" && password=="CONTRASENA2") { 
-        window.location="pruebanav.html"; }
+        window.location="/pages/ArbolNavegacion.html"; }
     else if (usuario=="USUARIO3" && password=="CONTRASENA3") { 
-        window.location="pruebanav.html"; }
+        window.location="/pages/ArbolNavegacion.html"; }
     else{
         window.location="usuarioocontraseña.html";
     }
