@@ -30,10 +30,9 @@ function busqueda() {
 function pintaArbolNavegacion(tiendas) {
 
     Autoservicios = obtieneRegistrosUnicos(tiendas, 'autoservicioId');
-    Formatos = obtieneRegistrosUnicos(tiendas, 'formatoId');
-    Zonas = obtieneRegistrosUnicos(tiendas, 'zonaId');
+    Formatos = tiendas;//obtieneRegistrosUnicos(tiendas, 'formatoId');
+    Zonas = tiendas;//obtieneRegistrosUnicos(tiendas, 'zonaId');
     Tienda = tiendas;
-
     $('#tblAutoservicio > tbody').empty();
     $('#tblFormato > tbody').empty();
     $('#tblZona > tbody').empty();
@@ -68,7 +67,7 @@ function clickAutoservicio(autoservicioId) {
     $('#tblZona > tbody').empty();
     $('#tblTienda > tbody').empty();
 
-    var formatosByAs = Formatos.filter(o => o.autoservicioId == autoservicioId);
+    var formatosByAs = obtieneRegistrosUnicos(Formatos.filter(o => o.autoservicioId == autoservicioId), 'formatoId');
 
     if (formatosByAs.length == 0) {
         alert("No existen tiendas para el formato seleccionado.");
@@ -98,7 +97,7 @@ function clickFormato(formatoId) {
     $('#tblZona > tbody').empty();
     $('#tblTienda > tbody').empty();
 
-    var zonasByFormatos = Zonas.filter(o => o.formatoId == formatoId);
+    var zonasByFormatos = obtieneRegistrosUnicos(Zonas.filter(o => o.formatoId == formatoId), 'zonaId');
     if (zonasByFormatos.length == 0) {
         alert("No existen tiendas para la zona seleccionada.");
         return;
