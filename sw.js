@@ -1,7 +1,7 @@
 // imports
-importScripts('vendor/pouchdb/pouchdb.min.js');
-importScripts('js/sw-db.js');
-importScripts('js/sw-utils.js');
+//importScripts('vendor/pouchdb/pouchdb.min.js');
+//importScripts('js/sw-db.js');
+//importScripts('js/sw-utils.js');
 
 
 const CACHE_ESTATICO    = 'ITK-cache-estatico-v1';
