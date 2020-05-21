@@ -14,8 +14,8 @@ function initMap() {
       mapTypeId: 'roadmap'
     };
 
-    tbTiendas.AgregaRegistro(0, 'PROMOACTIVADOR', '', 38, 'PROMOACTIVADOR', '', 16, 'ZONA 16', 862465, 'JUAN CARLOS CANSINO MARTINEZ', 18.090219, -96.136783, '~/../../img/favicon.png');
-    tbTiendas.AgregaRegistro(0, 'PROMOACTIVADOR', '', 38, 'PROMOACTIVADOR', '', 16, 'ZONA 16', 666666, 'EDGAR ALFREDO GARCIA ALAVEZ', 19.304738, -99.203846, '~/../../img/favicon.png');
+    //tbTiendas.AgregaRegistro(0, 'PROMOACTIVADOR', '', 38, 'PROMOACTIVADOR', '', 16, 'ZONA 16', 862465, 'JUAN CARLOS CANSINO MARTINEZ', 18.090219, -96.136783, '~/../../img/moto.png');
+    tbTiendas.AgregaRegistro(1, 'PROMOACTIVADOR', '', 38, 'PROMOACTIVADOR', '', 16, 'ZONA 16', 666666, 'EDGAR ALFREDO GARCIA ALAVEZ', 19.304738, -99.203846, '~/../../img/moto.png');
     tbTiendas.AgregaRegistro(1, 'CHEDRAUI', '', 38, 'CHEDRAUI', '', 16, 'ZONA 16', 380042, 'TUXTEPEC', 18.091860,-96.131017,'~/../../img/chedraui.png');
     tbTiendas.AgregaRegistro(1, 'CHEDRAUI', '', 38, 'CHEDRAUI', '', 29, 'ZONA 29', 380234, 'AJUSCO', 19.298832,-99.211610,'~/../../img/chedraui.png');
     tbTiendas.AgregaRegistro(2, 'WALMART', '', 44, 'BODEGA AURRERA', '', 16, 'ZONA 16', 441180, 'TUXTEPEC - OAXACA', 18.090689,-96.133418,'~/../../img/bodegaaurrera.png');
