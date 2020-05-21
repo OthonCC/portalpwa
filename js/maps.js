@@ -23,7 +23,7 @@ function initMap() {
     tbTiendas.AgregaRegistro(3, 'SORIANA', '../img/Autoservicios/Soriana.png', 17, 'HIPERMERCADO Y SUPER', '../img/Autoservicios/HiperMercado.png', 29, 'ZONA 29', 170937, 'Mega Soriana Coapa', 19.294811, -99.156600, '~/../../img/soriana.png');
     tbTiendas.AgregaRegistro(4, 'COMERCIAL MEXICANA', '../img/Autoservicios/ComercialMexicana.png', 43, 'MEGA COMERCIAL', '../img/Autoservicios/MegaComercial.png', 29, 'ZONA 29', 430174, 'MEGA COAPA', 19.302624, -99.207281, '~/../../img/superama.png');
     tbTiendas.AgregaRegistro(19, 'CITY FRESKCO', '../img/Autoservicios/CityFresko.png', 53, 'CITY FRESKO', '../img/Autoservicios/CityFresko.png', 29, 'ZONA 29', 530017, 'LA COMER TLALPAN', 19.306876, -99.164759, '~/../../img/soriana.png');
-    tbTiendas.AgregaRegistro(42, 'SUBURBIA', '../img/Autoservicios/Suburbia.png.png', 29, 'SUBURBIA', '../img/Autoservicios/Suburbia.png.png', 29, 'ZONA 29', 290496, 'Villa Coapa', 19.295872, -99.155254, '~/../../img/superama.png');
+    tbTiendas.AgregaRegistro(42, 'SUBURBIA', '../img/Autoservicios/Suburbia.png', 29, 'SUBURBIA', '../img/Autoservicios/Suburbia.png', 29, 'ZONA 29', 290496, 'Villa Coapa', 19.295872, -99.155254, '~/../../img/superama.png');
 
     tbTiendas.AgregaRegistro(1, 'CHEDRAUI', '../img/Autoservicios/Chedraui.png', 38, 'CHEDRAUI', '../img/Autoservicios/Chedraui.png', 15, 'ZONA 15', 380003, 'ALMACENES XALAPA', '', '', '');
     tbTiendas.AgregaRegistro(1, 'CHEDRAUI', '../img/Autoservicios/Chedraui.png', 38, 'CHEDRAUI', '../img/Autoservicios/Chedraui.png', 15, 'ZONA 15', 380004, 'XALAPA CRYSTAL', '', '', '');

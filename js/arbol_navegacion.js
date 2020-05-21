@@ -8,7 +8,7 @@ var Tienda = [];
 $(document).ready(function () {
     tbTiendas.ObtieneTodosRegistros().then(tiendas => {
         sucursales = tiendas.filter(o => o.autoservicioId != 0);
-        pintaArbolNavegacion(tiendas);
+        pintaArbolNavegacion(sucursales);
     });
 });
 
