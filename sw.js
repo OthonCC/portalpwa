@@ -1,7 +1,4 @@
-// imports
-//importScripts('vendor/pouchdb/pouchdb.min.js');
-//importScripts('js/sw-db.js');
-//importScripts('js/sw-utils.js');
+importScripts('js/sw-utils.js');
 
 
 const CACHE_ESTATICO    = 'ITK-cache-estatico-v1';
@@ -10,13 +7,16 @@ const CACHE_INMUTABLE = 'ITK-cache-inmutable-v1';
 
 
 const APP_SHELL = [
-    '/',
+    // '/',
     'index.html',
     'img/ITK.png',
     'img/ITK_ico.png',
     'img/ITK_logo.png',
     'css/main.css',
-    'js/login.js'    
+    'js/login.js',
+     'usuarioocontraseña.html',
+     'pages/ArbolNavegacion.html',
+     'pages/MapaAutoServicios.html' 
 ];
 
 const APP_SHELL_INMUTABLE = [
@@ -66,41 +66,22 @@ self.addEventListener('activate', e => {
 });
 
 
-// self.addEventListener( 'fetch', e => {
+self.addEventListener('fetch', e => { 
+    const responseSw =  caches.match(e.request).then( respCache => {
+        if(respCache){
+            return respCache;
+        }
+        else
+        {
+            fetch(e.request).then(respNetwork => {
+                return updateDynamicCache(CACHE_DINAMICO, e.request, respNetwork);
+            });
+        }
 
-//     let respuesta;
+    }); 
+    e.respondWith(responseSw);
+});
 
-//     if ( e.request.url.includes('/api') ) {
-
-//         // return respuesta????
-//         respuesta = manejoApiMensajes( CACHE_DINAMICO, e.request );
-
-//     } else {
-
-//         respuesta = caches.match( e.request ).then( res => {
-
-//             if ( res ) {
-                
-//                 actualizaCacheStatico( CACHE_ESTATICO, e.request, APP_SHELL_INMUTABLE );
-//                 return res;
-                
-//             } else {
-    
-//                 return fetch( e.request ).then( newRes => {
-    
-//                     return actualizaCacheDinamico( CACHE_DINAMICO, e.request, newRes );
-    
-//                 });
-    
-//             }
-    
-//         });
-
-//     }
-
-//     e.respondWith( respuesta );
-
-// });
 
 
 // // tareas asíncronas
