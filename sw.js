@@ -66,59 +66,56 @@ self.addEventListener('activate', e => {
 });
 
 
+// self.addEventListener( 'fetch', e => {
 
+//     let respuesta;
 
+//     if ( e.request.url.includes('/api') ) {
 
-self.addEventListener( 'fetch', e => {
+//         // return respuesta????
+//         respuesta = manejoApiMensajes( CACHE_DINAMICO, e.request );
 
-    let respuesta;
+//     } else {
 
-    if ( e.request.url.includes('/api') ) {
+//         respuesta = caches.match( e.request ).then( res => {
 
-        // return respuesta????
-        respuesta = manejoApiMensajes( CACHE_DINAMICO, e.request );
-
-    } else {
-
-        respuesta = caches.match( e.request ).then( res => {
-
-            if ( res ) {
+//             if ( res ) {
                 
-                actualizaCacheStatico( CACHE_ESTATICO, e.request, APP_SHELL_INMUTABLE );
-                return res;
+//                 actualizaCacheStatico( CACHE_ESTATICO, e.request, APP_SHELL_INMUTABLE );
+//                 return res;
                 
-            } else {
+//             } else {
     
-                return fetch( e.request ).then( newRes => {
+//                 return fetch( e.request ).then( newRes => {
     
-                    return actualizaCacheDinamico( CACHE_DINAMICO, e.request, newRes );
+//                     return actualizaCacheDinamico( CACHE_DINAMICO, e.request, newRes );
     
-                });
+//                 });
     
-            }
+//             }
     
-        });
+//         });
 
-    }
+//     }
 
-    e.respondWith( respuesta );
+//     e.respondWith( respuesta );
 
-});
+// });
 
 
-// tareas asíncronas
-self.addEventListener('sync', e => {
+// // tareas asíncronas
+// self.addEventListener('sync', e => {
 
-    console.log('SW: Sync');
+//     console.log('SW: Sync');
 
-    if ( e.tag === 'nuevo-post' ) {
+//     if ( e.tag === 'nuevo-post' ) {
 
-        // postear a BD cuando hay conexión
-        const respuesta = postearMensajes();
+//         // postear a BD cuando hay conexión
+//         const respuesta = postearMensajes();
         
-        e.waitUntil( respuesta );
-    }
+//         e.waitUntil( respuesta );
+//     }
 
 
 
-});
+// });
