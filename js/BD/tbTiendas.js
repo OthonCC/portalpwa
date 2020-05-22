@@ -40,7 +40,7 @@ class Tiendas {
     }
 
     ObtieneRegistrosPorId(id) {
-        let regs = [];
+        var regs = [];
         db.allDocs({ include_docs: true, descending: false })
             .then(doc => {
                 doc.rows.forEach(element => {

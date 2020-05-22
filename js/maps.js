@@ -1,4 +1,4 @@
-let tbTiendas = new Tiendas();
+var tbTiendas = new Tiendas();
 function initMap() {
   var options = {
     enableHighAccuracy: true,
@@ -120,7 +120,7 @@ function initMap() {
           animation: google.maps.Animation.DROP,
         });
 
-        let ventana = '<div class="info_content"><h3>' + markers[i].tiendaId + ' - ' + markers[i].tiendaNombre + '</h3><p>' + markers[i].zonaNombre + '</p></div>'
+        var ventana = '<div class="info_content"><h3>' + markers[i].tiendaId + ' - ' + markers[i].tiendaNombre + '</h3><p>' + markers[i].zonaNombre + '</p></div>'
         var infoWindow = new google.maps.InfoWindow(), marker, i;
         google.maps.event.addListener(marker, 'click', (function (marker, i) {
           return function () {
@@ -150,7 +150,7 @@ function UbicaAutoServiciosCercanos(lon, lat) {
   lonMax = lon + 1;
   latMax = lat - 1;
 
-  let suc = new Array();
+  var suc = new Array();
   var promesa = new Promise((resolve, reject) => {
     db.allDocs({ include_docs: true, descending: false })
       .then(doc => {

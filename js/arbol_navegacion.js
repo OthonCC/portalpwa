@@ -1,4 +1,4 @@
-let tbTiendas = new Tiendas();
+var tbTiendas = new Tiendas();
 var sucursales = [];
 var Autoservicios = [];
 var Formatos = [];
