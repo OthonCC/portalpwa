@@ -54,7 +54,6 @@ const APP_SHELL = [
     'css/main.css',
     'css/arbol_navegacion.css',
     'css/estilosheader.css',
-    'css/main.css',
     'css/util.css',
     //'css/base/datatables.min.css',
     'css/base/estilosheader.css',
