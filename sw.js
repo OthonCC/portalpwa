@@ -81,9 +81,10 @@ const APP_SHELL = [
     'js/base/funciones.js',
     'vendor/pouchdb/pouchdb-7.1.1.min.js',
     'vendor/bootstrap/js/bootstrap.js',
-    'js/template.js?v=1.0.0.12',
+    'js/template.js',
     'js/arbol_navegacion.js',
     'js/app.js',
+    'js/sw-utils.js',
 
     //-----------------Paginas
      'usuarioocontraseña.html',
