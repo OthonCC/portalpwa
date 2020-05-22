@@ -45,7 +45,7 @@ function creaHeader() {
     var html = "";
     html += '    <div class="headContent">';
     html += '    <div class="hamburgermenu"> <a href="#" id="hamburger"><i class="fa fa-bars txtWhite"></i></a> </div>';
-    html += '    <div class="headerLogo"> <a href="index.html"><img src="../img/logo_italika.png" id="imgLogo"></a> </div>';
+    html += '    <div class="headerLogo"> <a href="../index.html"><img src="../img/logo_italika.png" id="imgLogo"></a> </div>';
     html += '    <div class="headerUser">';
     html += '        <div class="nameUsr"><span>Monica</span></div>';
     html += '    </div>';

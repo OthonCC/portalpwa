@@ -82,8 +82,7 @@ const APP_SHELL = [
     'vendor/pouchdb/pouchdb-7.1.1.min.js',
     'vendor/bootstrap/js/bootstrap.js',
     'js/template.js?v=1.0.0.12',
-    'js/BD/tbTiendas.js?V=1.0.0.12',
-    'js/arbol_navegacion.js?v=1.0.0.73',
+    'js/arbol_navegacion.js',
     'js/app.js',
 
     //-----------------Paginas
