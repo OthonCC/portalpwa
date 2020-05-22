@@ -53,7 +53,6 @@ const APP_SHELL = [
     'js/login.js',
     'js/main.js',
     'js/maps.js',
-    'js/sw-utils.js',
     'js/BD/tbTiendas.js',
     'css/arbol_navegacion.css',
     'css/estilosheader.css',
