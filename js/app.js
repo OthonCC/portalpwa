@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = 'portalpwa/sw.js';
+var swLocation = '/portalpwa/sw.js';
 
 
 if ( navigator.serviceWorker ) {
