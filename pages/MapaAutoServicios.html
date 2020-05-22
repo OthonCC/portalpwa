@@ -18,33 +18,13 @@
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="author" type="text/plain" href="css/humans.txt" />
-  <link rel="icon" type="image/png" href="~/../../img/favicon.png?v=2">
-  <link rel="shortcut icon" href="~/../../img/favicon.png">
-  <!-- --------------------- Estilos Base --------------------- -->
-  <link rel="stylesheet" href="~/../../css/base/estilosheader.css">
-  <link rel="stylesheet" href="~/../../css/base/reset.css">
-  <link rel="stylesheet" href="~/../../css/base/estilos_generalesbasic.css">
-  <link rel="stylesheet" href="~/../../css/base/datatables.min.css">
-  <!-- --------------------- Fin Estilos Base --------------------- -->
-
-  <!-- --------------------- Estilos Locales --------------------- -->
-  <link rel="stylesheet" href="~/../../css/particular/admEvePreO.css">
-  <link rel="stylesheet" href="~/../../css/particular/catalogos.css">
-  <link rel="stylesheet" href="~/../../css/particular/admobjetivos.css">
-  <link rel="stylesheet" href="~/../../css/particular/modales.css" />
-  <link rel="stylesheet" href="~/../../css/particular/style.css" />
-  <link rel="stylesheet" href="~/../../fonts/font-awesome-4.7.0/css/font-awesome.css" />
-
-  <!-- --------------------- Fin Estilos Locales --------------------- -->
-
-  <style>
-    #map {
-      width: 100%;
-      height: 700px;
-      background-color: grey;
-    }
-  </style>
-
+  <link rel="icon" type="image/png" href="../img/favicon.png?v=2">
+  <link rel="shortcut icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="../css/base/estilosheader.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/estilos_generalesbasic.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.css" />
 </head>
 
 <body id="adminCuentas">
@@ -53,7 +33,7 @@
       <div class="hamburgermenu"> <a href="#" id="hamburger"><i class="fas fa-bars txtWhite"></i></a> </div>
       <div class="headerLogo"> <a href="index.html"><img src="~/../../img/logo_italika.png" id="imgLogo"></a> </div>
       <div class="headerUser">
-        <div class="nameUsr"><span>Monica</span></div>
+        <div class="nameUsr"><span></span></div>
       </div>
     </div>
   </header>
@@ -68,10 +48,10 @@
             <div><span>Monica</span></div>
           </li>
           <li> <a><span><i class="fal fa-user"></i></span></a><a href="#">
-              <div class="titHiddentMenu">Mi Perfil</div>
+              <div class="titHiddentMenu">Administración</div>
             </a> </li>
           <li> <a><span><i class="fal fa-file-invoice-dollar"></i></span></a><a href="#">
-              <div class="titHiddentMenuMenu">Finanzas</div>
+              <div class="titHiddentMenuMenu">Administración de Usuarios</div>
             </a>
             <ul class="menuNivel2">
               <li><a href="ArbolNavegacion.html">
@@ -119,8 +99,7 @@
                     <div class="tables">
                       <h3>AutoServicios</h3>
                       <!--The div element for the map -->
-                      <div id="map"></div>
-                      <button type="button" onclick="BuscarAutoservicios();">Buscar</button>
+                      <div id="map" style="width: 100%; height: 700px; background-color: grey;"></div>
                     </div>
                   </div>
                   <!-- Tabs -->
@@ -146,26 +125,9 @@
   <script type="text/javascript" src="~/../../js/maps.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjZ_ekZXiQ5m1xCmr77GSio2Qq6WOVT8Q&callback=initMap"></script>
-
-
-  <!-- --------------------- JS Base --------------------- -->
   <script type="text/javascript" src="~/../../js/base/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="~/../../js/base/jquery.dropkick.js"></script>
-  <script type="text/javascript" src="~/../../js/base/datatables.js"></script>
-  <script type="text/javascript" src="~/../../js/base/jquery-ui.js"></script>
-  <script type="text/javascript" src="~/../../js/base/jquery-ventana.js"></script>
   <script type="text/javascript" src="~/../../js/base/funciones.js"></script>
-  <!-- --------------------- Fin JS Base --------------------- -->
-
-  <!-- --------------------- JS Local --------------------- -->
-  <script type="text/javascript" src="~/../../js/particular/modales.js"></script>
-  <script type="text/javascript" src="~/../../js/particular/configtables.js"></script>
-  <script type="text/javascript" src="~/../../js/particular/datatables.js"></script>
-  <script type="text/javascript" src="~/../../js/particular/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="~/../../js/particular/dataTables.buttons.min.js"></script>
-  <script type="text/javascript" src="~/../../js/particular/dataTables.responsive.js"></script>
-
-  <!-- --------------------- Fin JS Local ----------------- -->
+  <script src="../vendor/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
