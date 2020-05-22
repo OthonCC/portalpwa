@@ -214,7 +214,7 @@ const APP_SHELL_INMUTABLE = [
     'fonts/fontawesome/fontawesome-webfont.ttf',
     'fonts/fontawesome/fontawesome-webfont.woff',
     'fonts/fontawesome/fontawesome-webfont.woff2',
-    'fonts/fontawesome/FontAwesome.otf',
+    'fonts/fontawesome/FontAwesome.otf'
 ];
 
 
