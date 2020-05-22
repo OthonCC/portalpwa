@@ -3,7 +3,7 @@ var db = new PouchDB('ITK');
 class Tiendas {
     table = "Tiendas";
 
-    AgregaRegistro(autoservicioId, autoservicioNombre, autoservicioIcon, formatoId, formatoNombre, formatoIcon, zonaId, zonaNombre, tiendaId, tiendaNombre, longitud, latitud) {
+    AgregaRegistro(autoservicioId, autoservicioNombre, autoservicioIcon, formatoId, formatoNombre, formatoIcon, zonaId, zonaNombre, tiendaId, tiendaNombre, longitud, latitud, rutaImagen) {
         var object = {
             _id: new Date().toISOString(),
             table: this.table,
@@ -18,7 +18,8 @@ class Tiendas {
             tiendaId: tiendaId,
             tiendaNombre: tiendaNombre,
             longitud: longitud,
-            latitud: latitud
+            latitud: latitud,
+            rutaImagen: rutaImagen
         };
 
         db.put(object)

@@ -1,163 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta charset="UTF-8">
-<title>AutoServicios</title>
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<meta name="description" content=""/>
-<meta name="keywords" content="" />
-<meta property="og:title" content="" />
-<meta property="og:url" content="" />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index, follow" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="author" type="text/plain" href="css/humans.txt" />
-<link rel="icon" type="image/png" href="~/../../img/favicon.png?v=2">
-<link rel="shortcut icon" href="~/../../img/favicon.png">
-<!-- --------------------- Estilos Base --------------------- -->
-<link rel="stylesheet" href="~/../../css/base/estilosheader.css">
-<link rel="stylesheet" href="~/../../css/base/reset.css">
-<link rel="stylesheet" href="~/../../css/base/estilos_generalesbasic.css">
-<link rel="stylesheet" href="~/../../css/base/datatables.min.css">
-<!-- --------------------- Fin Estilos Base --------------------- --> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>AutoServicios</title>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="author" type="text/plain" href="css/humans.txt" />
+  <link rel="icon" type="image/png" href="~/../../img/favicon.png?v=2">
+  <link rel="shortcut icon" href="~/../../img/favicon.png">
+  <!-- --------------------- Estilos Base --------------------- -->
+  <link rel="stylesheet" href="~/../../css/base/estilosheader.css">
+  <link rel="stylesheet" href="~/../../css/base/reset.css">
+  <link rel="stylesheet" href="~/../../css/base/estilos_generalesbasic.css">
+  <link rel="stylesheet" href="~/../../css/base/datatables.min.css">
+  <!-- --------------------- Fin Estilos Base --------------------- -->
 
-<!-- --------------------- Estilos Locales --------------------- -->
-<link rel="stylesheet" href="~/../../css/particular/admEvePreO.css">
-<link rel="stylesheet" href="~/../../css/particular/catalogos.css">
-<link rel="stylesheet" href="~/../../css/particular/admobjetivos.css">
-<link rel="stylesheet" href="~/../../css/particular/modales.css" />
-<link rel="stylesheet" href="~/../../css/particular/style.css" />
-<link rel="stylesheet" href="~/../../fonts/font-awesome-4.7.0/css/font-awesome.css" />
+  <!-- --------------------- Estilos Locales --------------------- -->
+  <link rel="stylesheet" href="~/../../css/particular/admEvePreO.css">
+  <link rel="stylesheet" href="~/../../css/particular/catalogos.css">
+  <link rel="stylesheet" href="~/../../css/particular/admobjetivos.css">
+  <link rel="stylesheet" href="~/../../css/particular/modales.css" />
+  <link rel="stylesheet" href="~/../../css/particular/style.css" />
+  <link rel="stylesheet" href="~/../../fonts/font-awesome-4.7.0/css/font-awesome.css" />
 
-<!-- --------------------- Fin Estilos Locales --------------------- -->
+  <!-- --------------------- Fin Estilos Locales --------------------- -->
 
-<style>
-  #map {
-    width: 100%;
-    height: 700px;
-    background-color: grey;
-  }
-</style>
+  <style>
+    #map {
+      width: 100%;
+      height: 700px;
+      background-color: grey;
+    }
+  </style>
 
 </head>
+
 <body id="adminCuentas">
-<header class="header">
-  <div class="headContent">
-    <div class="hamburgermenu"> <a href="#" id="hamburger"><i class="fas fa-bars txtWhite"></i></a> </div>
-    <div class="headerLogo"> <a href="index.html"><img src="~/../../img/logo_italika.png" id="imgLogo"></a> </div>
-    <div class="headerUser">
-      <div class="nameUsr"><span>Monica</span></div>
+  <header class="header">
+    <div class="headContent">
+      <div class="hamburgermenu"> <a href="#" id="hamburger"><i class="fas fa-bars txtWhite"></i></a> </div>
+      <div class="headerLogo"> <a href="index.html"><img src="~/../../img/logo_italika.png" id="imgLogo"></a> </div>
+      <div class="headerUser">
+        <div class="nameUsr"><span>Monica</span></div>
+      </div>
     </div>
-  </div>
-</header>
-<!--Fin Header--> 
+  </header>
+  <!--Fin Header-->
 
-<!-- Menu -->
-<div id="effectEfect" class="ui-widget-content ui-corner-all">
-  <div id="menuPrincipal">
-    <div id="menuContPrin">
-      <ul class="l-navegacion menuNivel1">
-        <li class="usermenu">
-          <div><span>Monica</span></div>
-        </li>
-        <li> <a><span><i class="fal fa-user"></i></span></a><a href="#">
-          <div class="titHiddentMenu">Mi Perfil</div>
-          </a> </li>
-        <li> <a><span><i class="fal fa-file-invoice-dollar"></i></span></a><a href="#">
-          <div class="titHiddentMenuMenu">Finanzas</div>
-          </a>
-          <ul class="menuNivel2">
-            <li><a href="ArbolNavegacion.html">
-              <div>AutoServicio</div>
-              </a></li>
-            <li><a href="#">
-              <div>Busca AutoServicio</div>
-              </a></li>
-          </ul>
-        </li>
-        <li> <a><span><i class="fal fa-power-off"></i></span></a><a href="#">
-          <div class="titHiddentMenu">Cerrar sesión</div>
-          </a> </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- Fin Menu -->
-
-<section class="contenido_principal">
-  <div class="wrappercontent">
-    <div class="borde">
-      <div class="contenedor">
-        <div class="titulo">
-          <div>
-            <div class="ruta"> 
-              <table style="width: 100%;">
-              <tr>
-                <td style="text-align: left;">
-                  <a href="index.html">Inicio</a> / <a href="index.html">Objetivos</a> </div>
-                  Localiza tu AutoServicio</td>
-                <td style="text-align: right"><a href="ArbolNavegacion.html"><i class="fa fa-arrow-left" style="font-size: xx-large; color: darkslateblue;"></i></a></td>
-              </tr></table>
-               </div> 
-        </div>
-        <section class="contenidogeneral"> 
-          <!-- Tabs -->
-          <div>
-            <div class="flex-end">
-            <div style="clear: both;"></div>
-            <div class="containertable">
-              <div class="tables">
-                <h3>AutoServicios</h3>
-                <!--The div element for the map -->
-                <div id="map"></div>
-                <button type="button" onclick="BuscarAutoservicios();">Buscar</button>
-              </div>
-            </div>
-            <!-- Tabs -->
-          </div>
-          <!-- Tabs --> 
-        </section>
-        <!-- contenidogeneral --> 
+  <!-- Menu -->
+  <div id="effectEfect" class="ui-widget-content ui-corner-all">
+    <div id="menuPrincipal">
+      <div id="menuContPrin">
+        <ul class="l-navegacion menuNivel1">
+          <li class="usermenu">
+            <div><span>Monica</span></div>
+          </li>
+          <li> <a><span><i class="fal fa-user"></i></span></a><a href="#">
+              <div class="titHiddentMenu">Mi Perfil</div>
+            </a> </li>
+          <li> <a><span><i class="fal fa-file-invoice-dollar"></i></span></a><a href="#">
+              <div class="titHiddentMenuMenu">Finanzas</div>
+            </a>
+            <ul class="menuNivel2">
+              <li><a href="ArbolNavegacion.html">
+                  <div>AutoServicio</div>
+                </a></li>
+              <li><a href="#">
+                  <div>Busca AutoServicio</div>
+                </a></li>
+            </ul>
+          </li>
+          <li> <a><span><i class="fal fa-power-off"></i></span></a><a href="#">
+              <div class="titHiddentMenu">Cerrar sesión</div>
+            </a> </li>
+        </ul>
       </div>
     </div>
   </div>
-  <!-- finwrapper --> 
-</section>
-<footer>
-  <div class="wrapper">
-    <p class="tCenter">Italika 2019<br>
-      Todos los derechos reservados. <a href="http://www.italika.mx/">www.italika.com</a></p>
-  </div>
-  <!-- /.wrapper --> 
-</footer>
-<!-- /footer --> 
-<script type="text/javascript" src="~/../../vendor/pouchdb/pouchdb-7.1.1.min.js"></script> 
-<script type="text/javascript" src="~/../../js/BD/tbTiendas.js"></script> 
-<script type="text/javascript" src="~/../../js/maps.js"></script> 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjZ_ekZXiQ5m1xCmr77GSio2Qq6WOVT8Q&callback=initMap"></script>
+  <!-- Fin Menu -->
+
+  <section class="contenido_principal">
+    <div class="wrappercontent">
+      <div class="borde">
+        <div class="contenedor">
+          <div class="titulo">
+            <div>
+              <div class="ruta">
+                <table style="width: 100%;">
+                  <tr>
+                    <td style="text-align: left"><a href="ArbolNavegacion.html"><i class="fa fa-arrow-left"
+                          style="font-size: xx-large; color: darkslateblue;"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-size: 12px;">
+                      Localiza tu AutoServicio</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <section class="contenidogeneral">
+              <!-- Tabs -->
+              <div>
+                <div class="flex-end">
+                  <div style="clear: both;"></div>
+                  <div class="containertable">
+                    <div class="tables">
+                      <h3>AutoServicios</h3>
+                      <!--The div element for the map -->
+                      <div id="map"></div>
+                      <button type="button" onclick="BuscarAutoservicios();">Buscar</button>
+                    </div>
+                  </div>
+                  <!-- Tabs -->
+                </div>
+                <!-- Tabs -->
+            </section>
+            <!-- contenidogeneral -->
+          </div>
+        </div>
+      </div>
+      <!-- finwrapper -->
+  </section>
+  <footer>
+    <div class="wrapper">
+      <p class="tCenter">Italika 2019<br>
+        Todos los derechos reservados. <a href="http://www.italika.mx/">www.italika.com</a></p>
+    </div>
+    <!-- /.wrapper -->
+  </footer>
+  <!-- /footer -->
+  <script type="text/javascript" src="~/../../vendor/pouchdb/pouchdb-7.1.1.min.js"></script>
+  <script type="text/javascript" src="~/../../js/BD/tbTiendas.js"></script>
+  <script type="text/javascript" src="~/../../js/maps.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjZ_ekZXiQ5m1xCmr77GSio2Qq6WOVT8Q&callback=initMap"></script>
 
 
-<!-- --------------------- JS Base --------------------- --> 
-<script type="text/javascript" src="~/../../js/base/jquery-3.3.1.min.js"></script> 
-<script type="text/javascript" src="~/../../js/base/jquery.dropkick.js"></script> 
-<script type="text/javascript" src="~/../../js/base/datatables.js"></script> 
-<script type="text/javascript" src="~/../../js/base/jquery-ui.js"></script> 
-<script type="text/javascript" src="~/../../js/base/jquery-ventana.js"></script> 
-<script type="text/javascript" src="~/../../js/base/funciones.js"></script> 
-<!-- --------------------- Fin JS Base --------------------- --> 
+  <!-- --------------------- JS Base --------------------- -->
+  <script type="text/javascript" src="~/../../js/base/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="~/../../js/base/jquery.dropkick.js"></script>
+  <script type="text/javascript" src="~/../../js/base/datatables.js"></script>
+  <script type="text/javascript" src="~/../../js/base/jquery-ui.js"></script>
+  <script type="text/javascript" src="~/../../js/base/jquery-ventana.js"></script>
+  <script type="text/javascript" src="~/../../js/base/funciones.js"></script>
+  <!-- --------------------- Fin JS Base --------------------- -->
 
-<!-- --------------------- JS Local --------------------- --> 
-<script type="text/javascript" src="~/../../js/particular/modales.js"></script> 
-<script type="text/javascript" src="~/../../js/particular/configtables.js"></script> 
-<script type="text/javascript" src="~/../../js/particular/datatables.js"></script> 
-<script type="text/javascript" src="~/../../js/particular/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="~/../../js/particular/dataTables.buttons.min.js"></script> 
-<script type="text/javascript" src="~/../../js/particular/dataTables.responsive.js"></script> 
+  <!-- --------------------- JS Local --------------------- -->
+  <script type="text/javascript" src="~/../../js/particular/modales.js"></script>
+  <script type="text/javascript" src="~/../../js/particular/configtables.js"></script>
+  <script type="text/javascript" src="~/../../js/particular/datatables.js"></script>
+  <script type="text/javascript" src="~/../../js/particular/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="~/../../js/particular/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="~/../../js/particular/dataTables.responsive.js"></script>
 
-<!-- --------------------- Fin JS Local ----------------- -->
+  <!-- --------------------- Fin JS Local ----------------- -->
 </body>
+
 </html>
