@@ -9,9 +9,6 @@ const CACHE_INMUTABLE = 'ITK-cache-inmutable-v1';
 const APP_SHELL = [
     // '/',
     'index.html',
-    'img/ITK.png',
-    'img/ITK_ico.png',
-    'img/ITK_logo.png',
     'img/bodegaaurrera.png',
     'img/chedraui.png',
     'img/favicon.png',
@@ -50,8 +47,6 @@ const APP_SHELL = [
     'img/Autoservicios/SuperCenter.png',
     'img/Autoservicios/SuperMercado.png',
     'img/Autoservicios/Walmart.png',
-    'css/main.css',
-    'js/login.js',
     'js/app.js',
     'js/arbol_navegacion.js',
     'js/datos.js',
