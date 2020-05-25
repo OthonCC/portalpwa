@@ -1,5 +1,3 @@
-
-
 //Actualiza el cache dinámico
 function updateDynamicCache(dynamicCache, request, response){
     if(response.ok){
