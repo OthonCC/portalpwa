@@ -83,6 +83,7 @@ const APP_SHELL = [
     'js/template.js',
     'js/arbol_navegacion.js',
     'js/app.js',
+    'js/sw-utils.js',
 
     //-----------------Paginas
      'usuarioocontraseña.html',
