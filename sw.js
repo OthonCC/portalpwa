@@ -29,7 +29,7 @@ const APP_SHELL = [
     'img/Autoservicios/BodegaAurrera.png',
     'img/Autoservicios/Bodesa.png',
     'img/Autoservicios/Calimax.png',
-    'img/Autoservicios/Casaley.png',
+    'img/Autoservicios/CasaLey.png',
     'img/Autoservicios/Chedraui.png',
     'img/Autoservicios/CityClub.png',
     'img/Autoservicios/CityFresko.png',
