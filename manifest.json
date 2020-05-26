@@ -47,7 +47,12 @@
             "type": "image/png",
             "sizes": "512x512"
         }
+    ],
+    "resources": {
+      "urls": [
+          "https://maps.googleapis.com/maps/api/js?key=AIzaSyDjZ_ekZXiQ5m1xCmr77GSio2Qq6WOVT8Q&callback=initMap"
       ]
+    }
 
 
 }
